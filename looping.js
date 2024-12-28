@@ -10,3 +10,7 @@ for(var a in arr)
     console.log(a);
     console.log("The element present in",a,"is",arr[a]);
 }
+//for each
+array.forEach(() => {
+    
+});
