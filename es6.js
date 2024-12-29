@@ -13,7 +13,7 @@ arrowFunc1 = (Department) => {
         return Department[0]
 }
 console.log(arrowFunc1(['AIML,CSE,IT',"AIML","CSE","IT"]));                                                                                     
-
+//task
 //without argument without return
 arrowFunc2 = () => {
     console.log("hello,kec");
@@ -49,6 +49,10 @@ function restoperator(...arr){
     console.log(arr);
 }
 restoperator(1,2,3);
+//task
+//why rest while having spread
+//The Spread Operator is used to 'spread' an iterable into its elements, 
+//while the Rest Operator 'collects' multiple elements into an array.
 
 //7.Scope
 //i)local scope/block scope - let

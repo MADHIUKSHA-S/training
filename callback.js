@@ -9,3 +9,17 @@ function submitform(formmsg,dbs){
 },1000)
 }
 submitform("Form Submitted Successfully",databaseSharing)                                                                                                                                                                                                                                                                                                                                   
+//task
+function clg(some) {
+    console.log(some);
+}
+function good() {
+    clg("good");
+}
+  
+function morning() {
+    clg("morning");
+}
+  
+good();
+morning();
