@@ -3,7 +3,6 @@ function databaseSharing(){
 }
 function submitform(formmsg,dbs){
    setTimeout(()=>{
-
     dbs()
     console.log(formmsg)
 },1000)

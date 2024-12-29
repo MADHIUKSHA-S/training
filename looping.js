@@ -11,6 +11,19 @@ for(var a in arr)
     console.log("The element present in",a,"is",arr[a]);
 }
 //for each
-array.forEach(() => {
-    
+//example 1
+array=[10,20 ]
+array.forEach((arr,i) => {  //the first one will be element always and 2nd one is index
+    console.log(arr,i);
 });
+//Example 2 with key value 
+obj={
+    "firstName":"Madhi",
+     "lastname":"uksha",
+     "age":20
+ }
+ obj.forEach(({key,value})=>
+{
+     console.log(key,value);
+}); 
+//print object in for of or for each
