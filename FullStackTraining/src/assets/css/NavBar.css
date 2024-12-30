@@ -1,0 +1,19 @@
+ul{
+    display: flex;
+    padding:0;
+    margin:0;
+    list-style-type: none;
+    justify-content: space-around;
+    background-color: pink;
+    padding: 10px;
+    
+}
+li{
+    text-align: center;
+    cursor:pointer
+}
+li:hover{
+    background-color: aqua;
+    color: azure;
+    border-radius: 10px;
+}
