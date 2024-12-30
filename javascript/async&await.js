@@ -11,7 +11,7 @@ arrowfunName = async()=>{
     },5000)
     console.log("kec");
 }
-
+    
 funName2();
 arrowfunName();
 
