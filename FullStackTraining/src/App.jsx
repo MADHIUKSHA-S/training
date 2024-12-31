@@ -5,6 +5,7 @@ import About from './Components/FunctionalComponents/About';
 import Gallery from './Components/FunctionalComponents/Gallery';
 import Contact from './Components/FunctionalComponents/Contact';
 import NavBar from './Components/FunctionalComponents/NavBar';
+import Footer from './Components/FunctionalComponents/Footer';
 function App() {
 return (
       <div>
@@ -16,6 +17,7 @@ return (
           <Route path='/Gallery' element={<Gallery/>}/>
           <Route path='/Contact' element={<Contact/>}/>
         </Routes>
+        <Footer/>
         </BrowserRouter>
          </div>   
   );
