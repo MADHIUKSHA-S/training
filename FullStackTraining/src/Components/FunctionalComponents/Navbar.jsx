@@ -15,6 +15,7 @@ const NavBar = () => {
                     <li><Link to='/use-context'>UseContext</Link></li>
                     <li><Link to='/use-memo'>UseMemo</Link></li>
                     <li><Link to='/Contact'>Contact</Link></li>
+                    <li><Link to='/mongodb'>Mongodb</Link></li>
                 </ul>
             </nav>
         </header>

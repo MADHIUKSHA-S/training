@@ -12,6 +12,8 @@ import UseRef from './Components/FunctionalComponents/useRef';
 import UseContext from './Components/FunctionalComponents/useContext';
 import UseMemo from './Components/FunctionalComponents/useMemo';
 import UseRefTask from './Components/FunctionalComponents/useRefTask';
+import Mongodb from './Components/FunctionalComponents/mongodb';
+
 function App() {  
   return (
     <div>
@@ -28,6 +30,8 @@ function App() {
           <Route path='/use-ref' element={<UseRef/>}/>
           <Route path='/use-reftask' element={<UseRefTask/>}/>
           <Route path='/use-memo' element={<UseMemo/>}/>
+          <Route path='/mongodb' element={<Mongodb/>}/>
+
         </Routes>
         <Footer />
       </BrowserRouter>
