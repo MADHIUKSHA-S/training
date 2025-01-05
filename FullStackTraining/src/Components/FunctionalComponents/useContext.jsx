@@ -1,4 +1,4 @@
-import Component2 from "./ContextComponents/Component2";
+import Component2 from "./contextComponents/Component2";
 import {createContext} from 'react';
 import "react";
 // eslint-disable-next-line react-refresh/only-export-components
