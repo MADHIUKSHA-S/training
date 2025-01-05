@@ -1,40 +1,43 @@
 import './App.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ClassCompEg from './Components/ClassComponents/ClassCompEg'
 import Home from './Components/FunctionalComponents/Home';
-import About from './Components/FunctionalComponents/About';
 import Gallery from './Components/FunctionalComponents/Gallery';
 import Contact from './Components/FunctionalComponents/Contact';
-import NavBar from './Components/FunctionalComponents/NavBar';
-import Footer from './Components/FunctionalComponents/Footer';
-import UseEffect from './Components/FunctionalComponents/useEffect';
-import UseEffectTask from './Components/FunctionalComponents/useEffectTask';
-import UseRef from './Components/FunctionalComponents/useRef';
-import UseContext from './Components/FunctionalComponents/useContext';
+import About from './Components/FunctionalComponents/About';
+import NavBar from './Components/FunctionalComponents/Navbar';
+import Footer from './Components/FunctionalComponents/Footer';  
+import UseEffect from './Components/FunctionalComponents/UseEffect';
+import Useeffect from './Components/FunctionalComponents/useEffectAPI.jsx'
+import UseRef from './Components/FunctionalComponents/UseRef'
+import ExamResults from './Components/FunctionalComponents/UseContext';
 import UseMemo from './Components/FunctionalComponents/useMemo';
-import UseRefTask from './Components/FunctionalComponents/useRefTask';
+import Login from './Components/FunctionalComponents/Login';
+import Signup from './Components/FunctionalComponents/Signup';
 import Mongodb from './Components/FunctionalComponents/mongodb';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function App() {  
+function App() {
   return (
     <div>
       <BrowserRouter>
-        <NavBar></NavBar>
+      <NavBar/>
         <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/About' element={<About college="Kongu Engineering College" clg1="arts" clg2="naturopathy" />} />
-          <Route path='/Gallery' element={<Gallery />} />
-          <Route path='/Contact' element={<Contact />} />
-          <Route path='/use-effect' element={<UseEffect/>}/>
-          <Route path='/use-effecttask' element={<UseEffectTask/>}/>
-          <Route path='/use-context' element={<UseContext/>}/>
-          <Route path='/use-ref' element={<UseRef/>}/>
-          <Route path='/use-reftask' element={<UseRefTask/>}/>
-          <Route path='/use-memo' element={<UseMemo/>}/>
-          <Route path='/mongodb' element={<Mongodb/>}/>
-
+          <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About college="KEC" clg1="Naturopathy" clg2="Polytecnic" />}/>
+          <Route path="/gallery" element={<Gallery/>}/>
+          <Route path="/contact" element={<Contact/>}/>
+          <Route path="/UseEffect" element={<UseEffect/>}/>
+          <Route path="/UseEffectAPI" element={<Useeffect/>}/>
+          <Route path="/UseRef" element={<UseRef/>}/>
+          <Route path="/ExamResults" element={<ExamResults/>}/>
+          <Route path="/UseMemo" element={<UseMemo/>}/>
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Signup" element={<Signup />} />
+          <Route path="/Mongodb" element={<Mongodb/>}/>
         </Routes>
-        <Footer />
       </BrowserRouter>
+      <ClassCompEg />
+      <Footer/>
     </div>
   );
 }
