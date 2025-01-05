@@ -1,15 +1,14 @@
 import './App.css'
-import ClassCompEg from './Components/ClassComponents/ClassCompEg'
 import Home from './Components/FunctionalComponents/Home';
 import Gallery from './Components/FunctionalComponents/Gallery';
 import Contact from './Components/FunctionalComponents/Contact';
 import About from './Components/FunctionalComponents/About';
 import NavBar from './Components/FunctionalComponents/Navbar';
 import Footer from './Components/FunctionalComponents/Footer';  
-import UseEffect from './Components/FunctionalComponents/UseEffect';
+import UseEffect from './Components/FunctionalComponents/useEffect';
 import Useeffect from './Components/FunctionalComponents/useEffectAPI.jsx'
 import UseRef from './Components/FunctionalComponents/UseRef'
-import ExamResults from './Components/FunctionalComponents/UseContext';
+import ExamResults from './Components/FunctionalComponents/useContext';
 import UseMemo from './Components/FunctionalComponents/useMemo';
 import Login from './Components/FunctionalComponents/Login';
 import Signup from './Components/FunctionalComponents/Signup';
@@ -36,7 +35,7 @@ function App() {
           <Route path="/Mongodb" element={<Mongodb/>}/>
         </Routes>
       </BrowserRouter>
-      <ClassCompEg />
+      
       <Footer/>
     </div>
   );
