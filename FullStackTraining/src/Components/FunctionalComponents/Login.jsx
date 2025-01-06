@@ -18,7 +18,7 @@ var Login = async(event) => {
     var isLoginSuccessful =req.data.isLoggedIn
     console.log(isLoginSuccessful)
     if(isLoginSuccessful){
-        navigate('/Home')
+        navigate('/')
         var message=req.data.message
         console.log(message);
     }
